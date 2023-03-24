@@ -1,0 +1,28 @@
+.footerContainer {
+    display: flex;
+    flex-direction: row;
+    border: solid black 2px;
+    width: 100%;
+    height: 20%;
+    margin-top: 15%;
+    justify-content: space-around;
+
+}
+
+.footerColumn {
+    display: flex;
+    justify-content: center;
+    width: 33%;
+
+
+}
+
+.footerList {
+    display: flex;
+
+}
+
+.footerLink {
+    display: flex;
+
+}
