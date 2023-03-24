@@ -1,0 +1,29 @@
+
+.styling {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background: #495E57;
+}
+
+.substyle {
+    display: flex;
+    background: #495E57;
+    font-weight: bold;
+    color: #EDEFEE;
+    margin-left: 5%;
+}
+
+.logo {
+    background: #495E57;
+}
+
+
+
+.substyle:hover {
+    text-decoration: underline;
+    color: #F4CE14;
+    cursor: pointer;
+}
