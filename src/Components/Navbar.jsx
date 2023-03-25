@@ -1,4 +1,5 @@
 import './Nav.css'
+import {Link} from 'react-router-dom';
 
 function Navbar(){
 
@@ -9,17 +10,19 @@ function Navbar(){
 
 
     return(
-        <div>
-            <ul className={'styling'}>
-                <li className={'logo'}><img src={logo.source} alt={logo.alt} /></li>
-                <li className={'substyle'}>Home</li>
-                <li className={'substyle'}>About</li>
-                <li className={'substyle'} >Menu</li>
-                <li className={'substyle'} >Reservations</li>
-                <li className={'substyle'} >Order Online</li>
-                <li className={'substyle'}>Login</li>
-            </ul>
-        </div>
+            <div>
+                <ul className={'styling'}>
+                    <li className={'logo'}><img src={logo.source} alt={logo.alt} /></li>
+                    <li className={'substyle'}><Link to="/">Home</Link></li>
+                    <li className={'substyle'}><a href={"#about"}>About</a></li>
+                    <li className={'substyle'}><Link to="/Menu">Menu</Link></li>
+                    <li className={'substyle'}><Link to="/Reservations">Reservations</Link></li>
+                    <li className={'substyle'}><Link to="/OrderOnline">Order Online</Link></li>
+                    <li className={'substyle'}><Link to="/Login">Login</Link></li>
+                </ul>
+            </div>
+
+
     )
 }
 

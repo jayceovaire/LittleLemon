@@ -1,10 +1,7 @@
 import './App.css';
-import Navbar from "./Components/Navbar";
-import Hero from "./Components/Hero";
-import Highlights from "./Components/Highlights";
-import Testimonials from "./Components/Testimonials";
-import About from "./Components/About";
-import Footer from "./Components/Footer";
+import Home from "./Components/Home";
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+
 // --white: #EDEFEE;
 //   --green: #495E57;
 //   --yellow: #F4CE14;
@@ -12,19 +9,24 @@ import Footer from "./Components/Footer";
 //   --peach: #FBDABB;
 //   --orange: #EE9972;
 //WRITE MEDIA QUERIES FOR UNDER 1200px WIDE
+//Menu
+//Reservations
+//Order Online
+//Login
 
 function App() {
   return (
-    <>
-      <Navbar />
-      <Hero />
-      <Highlights />
-      <Testimonials />
-        <About />
-        <Footer />
-
-    </>
+    <BrowserRouter>
+      <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/Menu" />
+          <Route path="/Reservations" />
+          <Route path="/OrderOnline" />
+          <Route path="/Login" />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
 export default App;
+
